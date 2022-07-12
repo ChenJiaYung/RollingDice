@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity ="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/smallMargin"
     android:orientation="vertical"
+    android:padding="@dimen/smallPadding"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,6 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/smallMargin"
+        android:fontFamily="@font/akronim"
+        android:padding="@dimen/smallPadding"
+
         android:text="@string/playerName" />
 
     <TextView
@@ -21,22 +27,28 @@
         android:layout_height="wrap_content"
 
         android:layout_gravity="center_horizontal"
-        android:text="HELLO BIJES!"/>
+        android:text="HELLO BIJES!"
+        style="@style/styles" />
+
     <ImageView
         android:id="@+id/diceImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/empty_dice"
-        tools:src="@drawable/dice_1"
-        />
+        android:layout_margin="@dimen/smallMargin"
+        android:padding="@dimen/smallPadding"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />
+
     <Button
         android:id="@+id/rollbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/smallMargin"
+        android:fontFamily="@font/akronim"
+        android:padding="@dimen/smallPadding"
         android:text="ROLL" />
-
 
 
 </LinearLayout>

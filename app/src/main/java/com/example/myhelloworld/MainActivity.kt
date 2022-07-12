@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         diceImg = findViewById(R.id.diceImg)
         numberText = findViewById(R.id.numberText)
         val rollButton: Button = findViewById(R.id.rollbutton)
+       // val rollButton = findViewById<Button>(R.id.rollButton)
         rollButton.setOnClickListener{ rollDice()}
     }
     private fun rollDice(){
