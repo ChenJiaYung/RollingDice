@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="styles">
-        <item name="android:layout_margin">@dimen/smallMargin</item>
-        <item name="android:fontFamily">@font/akronim</item>
-        <item name="android:padding">@dimen/smallPadding</item>
+    <style name="Style">
+        <item name="android:layout_marginStart">@dimen/layoutMargin</item>
+        <item name="android:fontFamily">@font/roboto_thin</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:paddingTop">@dimen/smallPadding</item>
+        <item name="android:paddingBottom">@dimen/smallPadding</item>
     </style>
 </resources>
